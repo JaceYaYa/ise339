@@ -237,6 +237,447 @@ class journaltutorial extends StatelessWidget {
           ],
         ));
 
+    Widget board3content = FadeIn(
+      child: Column(
+        children: [
+          Text(" "),
+          Text(
+            "Well Journal                           ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+          Text(
+            "Neuroplasticity                            ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "180 Degree Shift                          ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "What Went Well                           ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Noticing                                        ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Storing                                          ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Recording                                     ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Drawing                                        ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text("                                                                      "),
+        ],
+      ),
+      duration: Duration(seconds: 5),
+      curve: Curves.easeIn,
+    );
+
+    Widget board3all = Container(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: [
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Column(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      child: (Image.asset(
+                        'assets/images/drbicon.jpg',
+                        width: 18,
+                        height: 27,
+                        fit: BoxFit.cover,
+                      )),
+                    ),
+                    SizedBox(
+                        height: 30,
+                        width: 80,
+                        child: RaisedButton(
+                          child: Icon(
+                            x == 0 ? Icons.play_arrow : Icons.pause,
+                          ),
+                          onPressed: () async {
+                            if (x == 0) {
+                              player = await audioCache.play(
+                                  'audios/Tutorial Board 10 Audio.mp3');
+                              x = 1;
+                            } else if (x == 1) {
+                              player?.pause();
+                              x = 0;
+                            }
+                          },
+                        )),
+                  ],
+                ),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: board3content,
+                ),
+              ],
+            ),
+          ],
+        ));
+
+    Widget board4content = FadeIn(
+      child: Column(
+        children: [
+          Text(" "),
+          Text(
+            "Mental Fitness Record         ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+          Text(
+            "- Confidence                                 ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "- Concentration                            ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "- Composure                                 ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "- Challenge Response                ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "- Commitment                              ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text("                                                                      "),
+        ],
+      ),
+      duration: Duration(seconds: 5),
+      curve: Curves.easeIn,
+    );
+
+    Widget board4all = Container(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: [
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Column(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      child: (Image.asset(
+                        'assets/images/drbicon.jpg',
+                        width: 18,
+                        height: 27,
+                        fit: BoxFit.cover,
+                      )),
+                    ),
+                    SizedBox(
+                        height: 30,
+                        width: 80,
+                        child: RaisedButton(
+                          child: Icon(
+                            x == 0 ? Icons.play_arrow : Icons.pause,
+                          ),
+                          onPressed: () async {
+                            if (x == 0) {
+                              player = await audioCache.play(
+                                  'audios/Tutorial Board 11 Audio.mp3');
+                              x = 1;
+                            } else if (x == 1) {
+                              player?.pause();
+                              x = 0;
+                            }
+                          },
+                        )),
+                  ],
+                ),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: board4content,
+                ),
+              ],
+            ),
+          ],
+        ));
+
+    Widget board5content = FadeIn(
+      child: Column(
+        children: [
+          Text(" "),
+          Text(
+            "Overall Performance Rating",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+          Text(
+            "Composit Rating                          ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Goal Attainment Success          ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Exceptional Performance          ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Improved Mental Fitness           ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text("                                                                      "),
+        ],
+      ),
+      duration: Duration(seconds: 5),
+      curve: Curves.easeIn,
+    );
+
+    Widget board5all = Container(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: [
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Column(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      child: (Image.asset(
+                        'assets/images/drbicon.jpg',
+                        width: 18,
+                        height: 27,
+                        fit: BoxFit.cover,
+                      )),
+                    ),
+                    SizedBox(
+                        height: 30,
+                        width: 80,
+                        child: RaisedButton(
+                          child: Icon(
+                            x == 0 ? Icons.play_arrow : Icons.pause,
+                          ),
+                          onPressed: () async {
+                            if (x == 0) {
+                              player = await audioCache.play(
+                                  'audios/Tutorial Board 12 Audio.mp3');
+                              x = 1;
+                            } else if (x == 1) {
+                              player?.pause();
+                              x = 0;
+                            }
+                          },
+                        )),
+                  ],
+                ),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: board5content,
+                ),
+              ],
+            ),
+          ],
+        ));
+
+    Widget board6content = FadeIn(
+      child: Column(
+        children: [
+          Text(" "),
+          Text(
+            "Overall Satisfaction Rating ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+          Text(
+            "Coach John Wooden                   ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Peace of Mind                              ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text(
+            "Self Esteem                                  ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 14,
+            ),
+          ),
+          Text("                                                                      "),
+        ],
+      ),
+      duration: Duration(seconds: 5),
+      curve: Curves.easeIn,
+    );
+
+    Widget board6all = Container(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: [
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Column(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      child: (Image.asset(
+                        'assets/images/drbicon.jpg',
+                        width: 18,
+                        height: 27,
+                        fit: BoxFit.cover,
+                      )),
+                    ),
+                    SizedBox(
+                        height: 30,
+                        width: 80,
+                        child: RaisedButton(
+                          child: Icon(
+                            x == 0 ? Icons.play_arrow : Icons.pause,
+                          ),
+                          onPressed: () async {
+                            if (x == 0) {
+                              player = await audioCache.play(
+                                  'audios/Tutorial Board 13 Audio.mp3');
+                              x = 1;
+                            } else if (x == 1) {
+                              player?.pause();
+                              x = 0;
+                            }
+                          },
+                        )),
+                  ],
+                ),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Text(" "),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: board6content,
+                ),
+              ],
+            ),
+          ],
+        ));
+
 
     Widget homepagedirection = Container(
       child: Center(
@@ -293,6 +734,14 @@ class journaltutorial extends StatelessWidget {
                         board1all,
                         Text(' '),
                         board2all,
+                        Text(' '),
+                        board3all,
+                        Text(' '),
+                        board4all,
+                        Text(' '),
+                        board5all,
+                        Text(' '),
+                        board6all,
                         Text(' '),
                         homepagedirection,
                       ]),

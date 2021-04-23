@@ -52,6 +52,7 @@ class _MyAppState extends State<MyApp> {
                         "The Student -Athlete’s Pathway to Success",
                         style: TextStyle(
                           color: Colors.grey[1000],
+                          fontStyle: FontStyle.italic,
                           fontSize: 15,
                         ),
                       ),

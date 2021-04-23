@@ -7,6 +7,8 @@ import 'package:layout/journaltutorial.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'plantutorial.dart';
 import 'journaltutorial.dart';
+import 'summarytutorial.dart';
+import 'pathwaytutorial.dart';
 
 const _url = 'https://you.stonybrook.edu/sportpsych/';
 
@@ -387,7 +389,7 @@ class HomePage extends StatelessWidget {
         child: RaisedButton(
           onPressed: _launchURL,
           child: Text(
-            'Direction to Mental Fitness Assessment',
+            'Mental Fitness Assessment',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -405,7 +407,7 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => tutorialpage()));
           },
           child: Text(
-            'Direction to Weekly Goal/Success Plan Tutorial',
+            'Weekly Goal/Success Plan Tutorial',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -423,7 +425,43 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => journaltutorial()));
           },
           child: Text(
-            'Direction to Daily Success Journal Tutorial',
+            'Daily Success Journal Tutorial',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            ),
+          ),
+        ),
+      ),
+    );
+
+    Widget summarydirection = Container(
+      child: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => summarytutorial()));
+          },
+          child: Text(
+            'Weekly Success Summary Tutorial',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            ),
+          ),
+        ),
+      ),
+    );
+
+    Widget pathwaydirection = Container(
+      child: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => pathwaytutorial()));
+          },
+          child: Text(
+            'Pathway to Success Tutorial',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -458,6 +496,7 @@ class HomePage extends StatelessWidget {
                 Text(
                   "The Student - Athlete's Pathway to Success",
                   style: TextStyle(
+                    fontStyle: FontStyle.italic,
                     fontSize: 10.4,
                   ),
                 )
@@ -491,6 +530,8 @@ class HomePage extends StatelessWidget {
         urldirection,
         goaltutorialdirection,
         journaltutorialdirection,
+        summarydirection,
+        pathwaydirection,
         Text(" "),
         Text(" "),
       ]),
